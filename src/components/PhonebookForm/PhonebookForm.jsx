@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import shortid from "shortid";
+import PropTypes from 'prop-types';
 import {PhonebookStyled} from "./PhonebookForm.styled";
 class PhonebookForm extends Component{
   state = {
@@ -24,13 +25,6 @@ class PhonebookForm extends Component{
       this.setState({ name: '', number: '', });
   };
 
-  // handleLicenceChange = e => {
-  //   console.log(e.currentTarget.checked);
-  //   this.setState({licence:e.currentTarget.checked})
-  // }
-  // reset = () => {
-  //   this.setState({ name: '', tag: '' });
-  // }
     render() {
          const { name, number } = this.state;
       return (
@@ -88,3 +82,7 @@ class PhonebookForm extends Component{
 }
 
 export default PhonebookForm;
+
+PhonebookForm.propTypes = {
+    addContact:PropTypes.func.isRequired
+}
