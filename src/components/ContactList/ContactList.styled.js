@@ -1,6 +1,6 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const ContactListStyled = styled.ul`
-max-width:700px;
-padding:10px;
-`
+  max-width: 700px;
+  padding: 10px;
+`;
